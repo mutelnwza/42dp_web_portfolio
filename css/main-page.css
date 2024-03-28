@@ -1,0 +1,77 @@
+/* body{
+    padding-top: 3px;
+    direction: flex;
+    font-family: monospace;
+} */
+
+.img_text{
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    font-family: monospace;
+    padding: 16px 32px;
+}
+
+.center{
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.typed {
+    color: blue;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em blue;
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+     typing 10s steps(40, end),
+     blink-caret .5s step-end infinite;
+
+}    
+     @keyframes typing{
+        from { width: 0;}
+        to {width: 100%;}
+     }
+
+     @keyframes cursor_effect{
+        from,to {border-color: transparent}
+        50% {border-color: blue;}
+     }
+
+.image-left{            /* set image to left side */
+    width: 100% ;
+    /* margin-top: 5%;
+    margin-left: 15%; */
+    /* padding: auto; */
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5 ease; /* transition + custom entry time */
+    backface-visibility: hidden; /* hidden mirror image from user*/
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute; /* set position to be 50% of container*/
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.container:hover .image-left{
+    opacity: 0.3; /* make image fade*/
+}
+
+.container:hover .middle{
+    opacity: 1; /* make button opacity 1 */
+}
