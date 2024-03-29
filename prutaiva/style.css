@@ -110,6 +110,16 @@ h4{
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
+.contact{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
 .allcert :hover{
   opacity: 0.7;
 }
@@ -132,7 +142,7 @@ h4{
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 25px;
     text-decoration: none;
     font-size: 25px;
   }
@@ -146,7 +156,6 @@ h4{
   /* Add an active class to highlight the current page */
   .topnav a.active {
     background-color: #8d8379;
-    color: white;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
@@ -206,4 +215,64 @@ h4{
       display: block;
       text-align: left;
     }
+  }
+
+  
+  @media only screen and (min-width: 2000px) {
+    .name {
+      font-size: 100px;
+      padding-top: 60px;
+    }
+
+    .centerimg{
+      max-width: 1000px;
+    }
+
+    .quote1{
+      font-size: 40px;
+      padding: 0;
+      margin: 0;
+    }
+    .quote2{
+      padding: 0;
+      margin: 0;
+      font-size:30px;
+    }
+    .info2{
+      font-size: 40px;
+    }
+
+    .skillheading{
+      padding-top: 80px;
+      font-size: 80px;
+      padding-bottom: 0;
+    }
+    
+    .skillname{
+      font-size: 40px;
+      padding-bottom: 10px;
+    }
+
+    .quote3{
+      font-size: 40px;
+    }
+
+    .cert{
+      width: 30%;
+      height: 30%;
+    }
+
+    .getintouch{
+      font-size: 100px;
+    }
+
+    .topnav a{
+      font-size: 50px;
+      padding: 14px 80px;
+    }
+
+    p{
+      font-size: 50px;
+    }
+
   }
