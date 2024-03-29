@@ -1,8 +1,119 @@
-/* body{
-    padding-top: 3px;
-    direction: flex;
-    font-family: monospace;
-} */
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 26%, rgba(107,107,107,1) 66%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+@font-face {
+    font-family: 'vogan';
+    src: url('fonts/vogan-8m04b-webfont.woff2') format('woff2'),
+         url('fonts/vogan-8m04b-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.sometypemono {
+  font-family: "Sometype Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    text-align: center;
+    font-family: vogan;
+    font-size: 80px;
+    animation: headinganm 7s;
+    white-space: nowrap;
+}
+
+@keyframes headinganm{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.left{
+    position: relative;
+    float: left;
+    width: max-content;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.right{
+    position: relative;
+    width: max-content;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    float: right;
+}
+
+.name1{
+    animation: fade 5s;
+    position: relative;
+    font-family: vogan;
+    font-size: 100px;
+    margin: 0;
+    padding-top: 200px;
+    padding-left: 300px;
+    text-align: center;
+}
+
+.name2{
+    animation: fade 5s;
+    position: relative;
+    font-family: vogan;
+    color:rgb(243, 242, 242);
+    font-size: 100px;
+    padding-top: 200px;
+    padding-right: 300px;
+    margin: 0;
+    text-align: center;
+    
+}
+
+.fullname1{
+    position:absolute;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 30px;
+    padding-right: 50%;
+    text-align: center;
+}
+
+.fullname2{
+    position:absolute;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 30px;
+    padding-right: 50%;
+    text-align: center;
+}
+
+.intra1{
+    position: relative;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+    left:80%;
+}
+
+.intra2{
+    position: relative;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
 
 .img_text{
     background-color: #04AA6D;
@@ -23,6 +134,14 @@
     text-align: center;
 }
 
+.vl{
+    border-left: 1px solid rgb(23, 24, 23);
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top:20%;
+}
+
 .container,.container-r {
     position: relative;
     width: 100%;
@@ -31,12 +150,13 @@
 }
 
 .typed {
-    color: blue;
-    font-family: monospace;
+    color: rgb(40, 40, 41);
+    font-family: vogan;
     overflow: hidden;
-    border-right: .15em blue;
+    border-right: .15em rgb(40, 40, 41);
     white-space: nowrap;
     margin: 0 auto; 
+    padding-top: 5vw;
     letter-spacing: .15em;
     animation: 
      typing 10s steps(40, end),
@@ -50,8 +170,15 @@
 
      @keyframes cursor_effect{
         from,to {border-color: transparent}
-        50% {border-color: blue;}
+        50% {border-color: rgb(58, 58, 58);}
      }
+
+     @keyframes fade{
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+     }
+
+
 
 .image-left{            /* set image to left side */
     position: relative;
@@ -119,8 +246,91 @@
     opacity: 1;
 }
 
-/* @media screen and (max-width: 800px){
-    .middleleft,.image-left,.middleright,.image-right,.img_text, .container, .container-r, .container-r:hover, .container:hover{
+
+@media screen and (max-width: 1500px){
+    .left{
         width: 100%;
+        height: 50%;
+        padding-bottom: 100px;
     }
-} */
+    
+    .right{
+        position: relative;
+        width: 100%;
+        height: 50%;
+        padding-bottom: 100px;
+    }
+    
+    .name1{
+        position: relative;
+        font-family: vogan;
+        font-size: 80px;
+        padding-left: 100px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+
+    
+    .name2{
+        position: relative;
+        font-family: vogan;
+        color:rgb(211, 211, 211);
+        font-size: 80px;
+        padding-right: 100px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }   
+    .vl{
+        border-left: 1px solid rgb(23, 24, 23);
+        height: 0px;
+        position: absolute;
+        left: 50%;
+        top:20%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .left{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .name1{
+        margin-top: 100px;
+        text-align: center;
+        font-family: vogan;
+        font-size: 60px;
+        padding: 0;
+    }
+    
+    .name2{
+        font-family: vogan;
+        text-align: center;
+        color:rgb(211, 211, 211);
+        font-size: 60px;
+        padding: 0;
+        margin-top: 60px;
+    }  
+
+    .vl{
+        border-left: 1px solid rgb(23, 24, 23);
+        height: 0px;
+        position: absolute;
+        left: 50%;
+        top:20%;
+    }
+
+    .typed{
+        white-space:initial;
+        animation: 
+        typing 5s steps(40, end),
+        blink-caret .5s step-end infinite;
+    }
+}
+
