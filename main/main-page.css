@@ -75,8 +75,7 @@ body{
     padding-top: 200px;
     padding-right: 300px;
     margin: 0;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .fullname1{
@@ -246,7 +245,6 @@ body{
     opacity: 1;
 }
 
-
 @media screen and (max-width: 1500px){
     .left{
         width: 100%;
@@ -288,6 +286,10 @@ body{
         left: 50%;
         top:20%;
     }
+}
+
+.name1:hover, .name2:hover{
+    opacity: 0.5;
 }
 
 @media screen and (max-width: 600px){

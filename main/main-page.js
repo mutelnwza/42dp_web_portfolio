@@ -13,3 +13,4 @@ function wave(){
 function prang(){
     location.href='../prutaiva/prutaiva.html'
 }
+
